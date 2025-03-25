@@ -1,0 +1,25 @@
+class CodigoDeEticaDelInvestigador {
+    constructor(nombreInvestigador) {
+        this.nombre = nombreInvestigador;
+        this.principios = [
+            "Integridad: Actuar con honestidad en todo momento.",
+            "Responsabilidad: Cumplir con obligaciones de manera ética.",
+            "Respeto: Respetar los derechos y dignidad de todos.",
+            "Confidencialidad: Proteger la información sensible.",
+            "Objetividad: Evitar prejuicios y ser imparcial.",
+            "Transparencia: Compartir métodos y hallazgos de manera clara."
+        ];
+    }
+
+    mostrarCodigoDeEtica() {
+        console.log(`Código de Ética del Investigador: ${this.nombre}`);
+        console.log("Principios:");
+        this.principios.forEach((principio, index) => {
+            console.log(`${index + 1}. ${principio}`);
+        });
+    }
+}
+
+// Ejemplo de uso
+const investigador = new CodigoDeEticaDelInvestigador("Dra. María López");
+investigador.mostrarCodigoDeEtica();
