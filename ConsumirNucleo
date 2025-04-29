@@ -1,0 +1,21 @@
+function mostrarComponentes() {
+    const componentes = [
+        "Procesador (CPU)",
+        "Memoria RAM",
+        "Disco Duro / SSD",
+        "Tarjeta Madre",
+        "Tarjeta Gráfica (GPU)",
+        "Fuente de Alimentación",
+        "Sistema de Enfriamiento",
+        "Monitor",
+        "Teclado",
+        "Ratón"
+    ];
+
+    componentes.forEach(componente => {
+        console.log(componente);
+    });
+}
+
+// Llamar a la función para mostrar los componentes en la consola
+mostrarComponentes();
